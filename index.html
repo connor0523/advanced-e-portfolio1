@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connor Ellis</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script
+      src="https://kit.fontawesome.com/08fa670fbb.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js" defer></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script src="app.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("MUeYffQa3ocU_Vb2J");
+   })();
+</script>
+  </head>
+  <body>
+    <section id="landing-page" onmousemove="moveBackground(event)">
+      <nav>
+        <figure>
+          <img
+            id="personal-logo"
+            src="./Tutorial Exclusive Eportfolio/assets/CE-logos_black-removebg.png"
+            alt="logo"
+          />
+        </figure>
+        <ul class="nav__link--list">
+          <li class="nav__link" onclick="toggleModal()">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--white"
+              >About</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="#projects"
+              class="nav__link--anchor link__hover-effect link__hover-effect--white"
+              >Projects</a
+            >
+          </li>
+          <li class="nav__link" onclick="toggleModal()">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--white"
+              >Contact</a
+            >
+          </li>
+          <li class="nav__link click" onclick="toggleContrast()">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--white"
+              ><i class="fa-solid fa-circle-half-stroke"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <header class="header">
+        <div class="header__content">
+          <h1 class="title">Hey</h1>
+          <h1 class="title text--maroon">I'm Connor.</h1>
+          <p class="header__para">
+            I'm a
+            <strong class="text--maroon"> Frontend Software Developer</strong>
+            that has a strong drive and determination to make responsive and
+            great preforming web applications with an amazing user experience.
+            <br />
+            Here's a little more <strong class="text--maroon about__me--link" onclick="toggleModal()">about me.</strong>
+          </p>
+          <div class="about-me_links">
+            <a
+              href="https://www.linkedin.com/in/connor-ellis-46b7b6253/"
+              target="_blank"
+              class="about-me_link click"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://github.com/connor0523"
+              target="_blank"
+              class="about-me_link click"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/connor__ellis/"
+              target="_blank"
+              class="about-me_link click"
+            >
+              <i class="fa-brands fa-square-instagram"></i>
+            </a>
+            <a href="" class="about-me_link click">
+              <i class="fa-solid fa-file-pdf"></i>
+              <!--RESUME LINK WHEN FINISHED-->
+            </a>
+          </div>
+        </div>
+      </header>
+      <button class="mail__button click" onclick="toggleModal()">
+        <i class="fa-sharp fa-solid fa-envelope"></i>
+      </button>
+      <a href="#projects" class="scroll">
+        <div class="scroll__icon click"></div>
+      </a>
+      <div class="modal">
+        <div class="modal__half modal__about">
+            <h3 class="modal__title modal__title--about">About me.</h3>
+            <h4 class="modal__sub-title modal__sub-title--about">Fontend Software Developer</h4>
+            <p class="modal__para"> I am a 18 year old <b><span class="text--maroon">frontend software developer</span></b> that has a strong drive 
+                and determination to make responsive and great preforming web applications 
+                with an amazing user experience.
+                <br>
+                I currently work on extremely difficult engineering problems and learn 
+                from an instructor that is very <b><span class="text--maroon">talented</span></b> and <b> <span class="text--maroon">experienced</span></b> in Software Engineering.
+            </p>
+            <div class="language__list">
+                <div class="language">
+                    <figure class="language__img--wrapper">
+                      <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+                        alt="Html Logo"
+                        class="language__img"
+                      />
+                    </figure>
+                    <span class="language__name">HTML</span>
+                  </div>
+                  <div class="language">
+                    <figure class="language__img--wrapper">
+                      <img
+                        src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
+                        alt="CSS Logo"
+                        class="language__img"
+                      />
+                    </figure>
+                    <span class="language__name">CSS</span>
+                  </div>
+                  <div class="language">
+                    <figure class="language__img--wrapper">
+                      <img
+                        src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
+                        alt="JavaScript Logo"
+                        class="language__img"
+                      />
+                    </figure>
+                    <span class="language__name">JavaScript</span>
+                  </div>
+                  <div class="language">
+                    <figure class="language__img--wrapper">
+                      <img
+                        src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png"
+                        alt="React Logo"
+                        class="language__img"
+                      />
+                    </figure>
+                    <span class="language__name">React</span>
+                  </div>
+            </div>
+        </div>
+        <div class="modal__half modal__contact">
+            
+            <h3 class="modal__title modal__title--contact">
+                Let's get in touch!
+            </h3>
+            <h4 class="modal__sub-title modal__sub-title--contact modal__title--title">
+                I am currently open to any opportunities.
+            </h4>
+            <form id="contact__form" onsubmit="contact(event)">
+                <div class="form__item">
+                    <label class="form__item--label">Name</label>
+                    <input class="input" name="user_name" type="text" required></input>
+                </div>
+                <div class="form__item">
+                    <label class="form__item--label">Email</label>
+                    <input class="input" name="user_email" type="email" required></input>
+                </div>
+                <div class="form__item">
+                    <label class="form__item--label">Message</label>
+                    <textarea class="input" name="message" type="text" required></textarea>
+                </div>
+                <button id="contact__submit" class="form__submit" >
+                    Send it my way!
+                </button>
+            </form>
+            <div class="modal__overlay modal__overlay--loading">
+                <i class="fas fa-spinner"></i>
+            </div>
+            <div class="modal__overlay modal__overlay--success">
+                Thanks for the messeage! Will get back to you as soon as I can.
+            </div>
+        </div>
+        <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+      </div>
+      <img src="./Tutorial Exclusive Eportfolio/assets/semi circle.svg" class="shape shape--0">
+      <img src="./Tutorial Exclusive Eportfolio/assets/circle.svg" class="shape shape--1">
+      <img src="./Tutorial Exclusive Eportfolio/assets/squiggly.svg" class="shape shape--2">
+      <img src="./Tutorial Exclusive Eportfolio/assets/circle.svg" class="shape shape--3">
+      <img src="./Tutorial Exclusive Eportfolio/assets/triangle.svg" class="shape shape--4">
+      <img src="./Tutorial Exclusive Eportfolio/assets/circle.svg" class="shape shape--5">
+      <img src="./Tutorial Exclusive Eportfolio/assets/squiggly.svg" class="shape shape--6">
+      <img src="./Tutorial Exclusive Eportfolio/assets/semi circle.svg" class="shape shape--7">
+      <img src="./Tutorial Exclusive Eportfolio/assets/triangle.svg" class="shape shape--8">
+    </section>
+    <section id="projects">
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">
+            Here are some of my <span class="text--maroon">projects</span>
+          </h1>
+          <ul class="project__list">
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./Tutorial Exclusive Eportfolio/assets/blinker mockup.png"
+                  class="project__img"
+                  alt=""/>
+                    <div class="project__wrapper--bg"></div>
+                  <div class="project__description">
+                  <h3 class="project__description--title">
+                    Car Sales Projects
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    Html, CSS, JavaScript, Vue, Vuex
+                  </h4>
+                  <p class="project__description--para">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Esse eveniet qui odio architecto cupiditate deleniti dolorem
+                    tempore tempora aliquid maiores adipisci atque, minus
+                    excepturi consectetur, nulla quisquam sit repellendus
+                    dolore!
+                  </p>
+                  <div class="project__description--links">
+                    <a href="https://github.com/connor0523" target="_blank" class="project__description--link">
+                        <i class="fa-brands fa-github"></i> 
+                    <a href="#" class="project__description--link">
+                        <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer>
+        <div class="row footer_row">
+            <a href="#" class="footer_anchor">
+             <figure class="footer_logo">
+               <img src="./Tutorial Exclusive Eportfolio/assets/CE-logos_black-removebg.png" class="samurailogo" alt="">
+             </figure>
+             <span class="footer_logo--popper">
+               Top↑
+               <i class="fas fa-arrrow-up"></i>
+             </span>
+            </a> 
+            <div class="footer_social--list">
+             <a href="https://github.com/connor0523" target="_blank" class="
+             footer_social--link
+             link__hover-effect
+             link__hover-effect--white
+             " target="_blank">GitHub</a>
+             <a href="https://www.linkedin.com/in/connor-ellis-46b7b6253/" target="_blank" class="
+             footer_social--link
+             link__hover-effect
+             link__hover-effect--white
+             " target="_blank">LinkedIn</a>
+             <a href="#" onclick="toggleModal()" class="
+             footer_social--link
+             link__hover-effect
+             link__hover-effect--white
+             ">Contact</a>
+             <!--FILL RESUME HERE--> <a href="" target="_blank" class="
+             footer_social--link
+             link__hover-effect
+             link__hover-effect--white
+             " target="_blank" download>Resume</a>
+            </div>
+            <div class="footer_copyright">Copyright© 2022 Connor Ellis</div>
+           </div>
+    </footer>
+  </body>
+</html>
