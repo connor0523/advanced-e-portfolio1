@@ -724,6 +724,10 @@ opacity: 1;
     .shape {
         display: none;
     }
+
+    nav{
+        padding: right 16px;
+    }
 }
 
 /*SMALL PHONES*/
